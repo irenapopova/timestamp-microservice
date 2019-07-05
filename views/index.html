@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+     <title>Timestamp Microservice</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+     <link href="/public/css/style.css" rel="stylesheet" type="text/css">
+     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+
+   </head>
+
+   <body>
+      <div class="container">
+        <div class="well">
+
+
+         <h1>Timestamp Microservice  &#128348; </h1>
+        <hr>
+        <p>
+          This service accepts a string as a parameter and will check whether it is either a human readable date or a Unix timestamp.
+          If it is, it will return both the Unix timestamp and the natural language form of that date as a JSON object.
+          If it is neither, it returns 'null' for those properties.
+        </p>
+
+        <h2>Example Usage</h2>
+        <p>You can access the API through a browser or by creating an ajax get request.</p>
+        <code>https://timestamp-micro-srvc.herokuapp.com/July 4, 2019</code>
+        <br>
+        <code>https://timestamp-micro-srvc.herokuapp.com/1562198400</code>
+        <h2>Example output:</h2>
+        <code>{
+          <br>   "unix": 1562198400,
+          <br>
+               "natural": "July 4, 2019"
+          <br>
+          }
+        </code>
+          </div> <!-- well -->
+        <footer>
+            <p>Github Repo <a href="#" target="_blank">
+            <span class="fa fa-github"></span>
+          </a></p>
+            <p>
+              Built by <a href="#" target="_blank">Irena Popova</a>
+            </p>
+          </footer>
+      </div> <!-- container -->
+   </body>
+</html>
